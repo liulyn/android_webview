@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_view"
+    android:background="@drawable/shape_bank_card_add_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/h_80">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_add_bankcard"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_del"
+            android:src="@mipmap/add_bankcard"
+            android:layout_centerInParent="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:text="添加银行卡"
+            android:textColor="@color/white"
+            android:textSize="@dimen/f14"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/h_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

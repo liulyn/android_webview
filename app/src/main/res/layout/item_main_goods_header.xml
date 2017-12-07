@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_page"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_160">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_nav"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/ll_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:orientation="horizontal"
+                android:padding="10dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white_bg"
+            android:orientation="vertical">
+            <GridView
+                android:id="@+id/gv_main_active"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="0dp"
+                android:numColumns="4"
+                android:paddingBottom="@dimen/h_4"
+                android:paddingTop="@dimen/h_4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_4"
+                android:background="@color/color_gray_bg" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

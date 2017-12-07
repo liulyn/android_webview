@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_gray_bg"
+        android:orientation="vertical">
+
+        <com.cloud.tao.ui.widget.TitleBar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@color/nag_bg"
+            app:title_left_icon_visible="false"
+            app:title_right_icon_src="@mipmap/ic_home_search"
+            app:title_right_visible="false"
+            app:title_text="首页"
+            app:title_text_color="@android:color/white" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/sw_main_goods_model"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+            <com.cloud.tao.ui.widget.LoadMoreGridRecyclerView
+                android:id="@+id/lv_main_goods_model"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gary_bg"
+                android:listSelector="@android:color/white" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</layout>

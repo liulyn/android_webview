@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/nag_bg"
+            android:layout_height="@dimen/titlebar_height"
+            android:paddingLeft="@dimen/w_8"
+            android:paddingRight="@dimen/w_8">
+            <TextView
+                android:id="@+id/iv_search_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="取消"
+                android:textColor="@color/color_white_bg"
+                android:textSize="@dimen/f16"/>
+            <RelativeLayout
+                android:id="@+id/fl_mobile"
+                android:layout_toLeftOf="@+id/iv_search_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/h_2"
+                android:layout_marginBottom="@dimen/h_2"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/w_12"
+                android:background="@drawable/ic_etc_input_bg">
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="@dimen/w_4"
+                    android:scaleType="centerInside"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_home_research_hint"
+                    />
+
+                <com.cloud.tao.ui.widget.SearchEditTextView
+                    android:id="@+id/et_search"
+                    style="@style/StyleSearchEditText"
+                    android:layout_toRightOf="@id/iv_search"
+                    android:hint="搜索商品"
+                    android:maxLength="20" />
+            </RelativeLayout>
+            <!--<EditText
+                android:id="@+id/et_search"
+                style="@style/EditText.Search"
+                android:paddingTop="@dimen/global_padding"
+                android:paddingBottom="@dimen/global_padding"
+                android:paddingRight="@dimen/w_26"
+                android:paddingLeft="@dimen/w_28"
+                android:maxLines="1"
+                />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:layout_marginLeft="@dimen/w_46"
+                android:src="@mipmap/ic_home_research_hint"
+                />
+
+            <ImageView
+                android:id="@+id/iv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:layout_marginRight="@dimen/w_26"
+                android:src="@mipmap/ic_search_cancel"
+                />-->
+
+        </RelativeLayout>
+<!--
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lr_goods_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+        <com.cloud.tao.ui.widget.LoadMoreRecyclerView
+            android:id="@+id/lr_goods_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white_bg"
+            android:listSelector="@android:color/white"
+            />
+    </LinearLayout>
+</layout>

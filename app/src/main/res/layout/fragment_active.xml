@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.cloud.tao.ui.widget.TitleBar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@color/nag_bg"
+            app:title_left_icon_visible="false"
+            app:title_right_visible="true"
+            app:title_text="分类"
+            app:title_text_color="@android:color/white" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fbfbfb"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_active_sort"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="#f4f4f4"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--分割-->
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gray_litter_line"
+        >
+
+        <com.etc.mall.ui.widget.TitleBar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@color/colorPrimary"
+            app:title_left_icon_visible="false"
+            app:title_right_visible="true"
+            app:title_text="活动" />
+
+        <com.etc.mall.ui.widget.LoadMoreRecyclerView
+            android:id="@+id/recycler_active"
+            android:layout_below="@id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_bg"/>
+
+
+        <com.etc.mall.ui.widget.LoadTipLayout
+            android:id="@+id/loadding"
+            android:layout_below="@id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tip_loadding_src="@mipmap/ic_loading"
+            android:visibility="gone"
+            />
+    </RelativeLayout>-->
+</layout>

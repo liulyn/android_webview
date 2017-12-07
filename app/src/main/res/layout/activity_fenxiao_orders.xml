@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gary_bg"
+        >
+
+        <com.cloud.tao.ui.widget.TitleBar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:layout_alignParentTop="true"
+            android:background="@color/nag_bg"
+            app:title_left_icon_src="@mipmap/ic_chevron_left"
+            app:title_left_icon_visible="true"
+            app:title_right_visible="true"
+            app:title_text="创业订单"
+            app:title_text_color="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/h_50"
+                        android:background="#ffffff"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/h_47"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/ll_fenxiao_order_all"
+                                android:layout_width="@dimen/w_3"
+                                android:orientation="horizontal"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center" >
+
+                                <TextView
+                                    android:id="@+id/tv_fenxiao_order_all"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="全部"
+                                    android:textColor="#F96363" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_fenxiao_order_wait_pay"
+                                android:layout_width="@dimen/w_3"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center" >
+
+                                <TextView
+                                    android:id="@+id/tv_fenxiao_order_wait_pay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:text="待支付" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_fenxiao_order_wait_send"
+                                android:layout_width="@dimen/w_3"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:id="@+id/tv_fenxiao_order_wait_send"
+                                    android:text="待发货" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_fenxiao_order_sended"
+                                android:layout_width="@dimen/w_3"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:id="@+id/tv_fenxiao_order_sended"
+                                    android:text="已发货" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_fenxiao_order_success"
+                                android:layout_width="@dimen/w_3"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:id="@+id/tv_fenxiao_order_success"
+                                    android:text="已完成" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/id_iv_tabline"
+                            android:layout_width="@dimen/w_100"
+                            android:layout_height="@dimen/h_3"
+                            android:background="#F96363" />
+
+                    </LinearLayout>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_fnexiao_order"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </ScrollView>
+            <!--<com.etc.mall.ui.widget.LoadTipLayout
+                android:id="@+id/loadding"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:tip_loadding_src="@mipmap/ic_loading"
+                />
+-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

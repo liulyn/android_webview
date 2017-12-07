@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingBottom="@dimen/global_padding"
+              android:paddingLeft="@dimen/global_padding"
+              android:paddingRight="@dimen/global_padding"
+             >
+
+    <View
+        android:id="@+id/line"
+        style="@style/View.line_width"
+        android:layout_marginLeft="@dimen/content_padding"
+        android:layout_marginRight="@dimen/content_padding"
+        android:layout_marginBottom="@dimen/global_padding"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/w_46"
+            android:layout_height="@dimen/w_46"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tv_online"
+            style="@style/TextView.Gray_Item"
+            android:text="微网游" />
+    </LinearLayout>
+</LinearLayout>

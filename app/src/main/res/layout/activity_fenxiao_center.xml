@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_gray_bg"
+        android:orientation="vertical">
+
+        <com.cloud.tao.ui.widget.TitleBar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:layout_alignParentTop="true"
+            android:background="@color/nag_bg"
+            app:title_left_icon_src="@mipmap/ic_chevron_left"
+            app:title_left_icon_visible="true"
+            app:title_right_visible="true"
+            app:title_text="创业中心"
+            app:title_text_color="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_fenxiao_center_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_90"
+                    android:background="@color/color_white_bg">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/w_4">
+
+                        <ImageView
+                            android:id="@+id/iv_fengxiao_icon"
+                            android:layout_width="@dimen/h_80"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/ic_login_logo" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/w_4"
+                            android:layout_toRightOf="@id/iv_fengxiao_icon">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_fenxiao_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="@dimen/f16" />
+
+                                <TextView
+                                    android:id="@+id/tv_fenxiao_recommend_code"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/w_8"
+                                    android:layout_toRightOf="@id/tv_fenxiao_name"
+                                    android:textColor="@color/text_gray_02"
+                                    android:textSize="@dimen/f14" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:text="累计佣金："
+                                            android:textColor="@color/text_gray"
+                                            android:textSize="@dimen/f14" />
+
+                                        <TextView
+                                            android:id="@+id/tv_fenxiao_commission_total"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:textColor="@color/text_gray"
+                                            android:textSize="@dimen/f14" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/h_4"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:text="可提佣金："
+                                            android:textColor="@color/text_gray"
+                                            android:textSize="@dimen/f14" />
+
+                                        <TextView
+                                            android:id="@+id/tv_fenxiao_commission_confirmed"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:textColor="@color/red_bg"
+                                            android:textSize="@dimen/f14" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <Button
+                                    android:id="@+id/bt_fenxiao_extract_money"
+                                    android:layout_width="@dimen/w_80"
+                                    android:layout_height="@dimen/w_36"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="@dimen/w_2"
+                                    android:background="@drawable/selector_round_rectangle_bt"
+                                    android:text="提现"
+                                    android:textColor="@color/color_white_bg"
+                                    android:textSize="@dimen/f14"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/item_line_cover" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_fenxiao_upgrade"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_80"
+                    android:layout_marginTop="@dimen/h_6"
+                    android:background="@color/color_white_bg"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/w_6">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="当前等级："
+                                android:textColor="@color/text_gray"
+                                android:textSize="@dimen/f14" />
+
+                            <TextView
+                                android:id="@+id/tv_fenxiao_current_level"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/w_6"
+                                android:textColor="@color/nag_bg"
+                                android:textSize="@dimen/f14" />
+
+                            <TextView
+                                android:id="@+id/tv_fenxiao_next_level"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/w_6"
+                                android:textColor="@color/text_gray"
+                                android:textSize="@dimen/f14" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="升级后："
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="@dimen/f14" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/h_6"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_fenxiao_next_level_frozen_money"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/text_gray"
+                                        android:textSize="@dimen/f14" />
+
+                                    <TextView
+                                        android:id="@+id/tv_fenxiao_next_level_discount"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/text_gray"
+                                        android:textSize="@dimen/f14" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/bt_update_leven"
+                                android:layout_width="@dimen/w_80"
+                                android:layout_height="@dimen/w_36"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/shape_round_line"
+                                android:text="升级"
+                                android:textColor="@color/red_bg"
+                                android:textSize="@dimen/f14" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/item_line_cover" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/vMasker"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#e0000000"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical">
+
+                    <GridView
+                        android:id="@+id/gv_fenxiao_active"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_white_bg"
+                        android:horizontalSpacing="0dp"
+                        android:numColumns="3"
+                        android:paddingBottom="@dimen/h_6"
+                        android:paddingTop="@dimen/h_6" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/item_line_cover" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.cloud.tao.ui.widget.LoadTipLayout
+                android:id="@+id/loadding"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:tip_loadding_src="@mipmap/ic_loading" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

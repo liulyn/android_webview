@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yzxBase">#82b1ff</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">@color/nag_bg</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="search_bg">#51C0FF</color>
+    <color name="white">@android:color/white</color>
+    <color name="toolbar_color">#22AC39</color>
+    <color name="red_gift_num">#FF4E4E</color>
+
+    <color name="gray_text" >#686868</color>
+    <color name="gray_line">#DDDDDD</color>
+    <color name="gray_litter_line">#eee</color>
+    <color name="gray_bg">#F4F4F4</color>
+    <color name="bg_gray_text" >#F4F4F4</color>
+
+    <color name="orange">#FFAA00</color>
+    <color name="orange_1">#FF8951</color>
+    <color name="black_bg1">#000000</color>
+    <color name="black_bg2">#99000000</color>
+
+    <color name="active_sort_bg">#f4f4f4</color>
+
+    <!--以下云之道新增-->
+    <color name="item_line_cover">#cccccc</color><!--深分割线颜色-->
+    <color name="item_line">#dedede</color><!--浅分割线颜色-->
+    <color name="color_white_bg">#ffffffff</color> <!--白色背景-->
+    <color name="color_gray_bg">#f4f4f4</color><!--灰色背景-->
+    <color name="text_gray">#333333</color><!--字体黑色-->
+    <color name="text_gray_01">#808080</color><!--字体灰色-->
+    <color name="text_gray_02">#cccccc</color><!--字体浅灰色-->
+    <color name="gary_bg">#F5F5F5</color>
+    <color name="nag_bg">#4A6DA8</color> <!--主题颜色1FA4DC-->
+    <color name="text_nag_bg">#4A6DA8</color> <!--字体主题颜色-->
+    <color name="red_bg">#F84241</color>
+    <color name="nag_deep_blue_bg">#074CE7</color>
+    <color name="nag_deep_bg">#45669d</color> <!--按钮点击时加深颜色-->
+    <color name="nag_yellow_bg">#fad235</color><!--黄色背景-->
+    <color name="nag_yellow_deep_bg">#ffcc00</color><!--黄色按钮点击时加深颜色-->
+    <color name="color_dialog_btn">#f4ffffff</color>
+    <color name="color_shopper_buy_now_deep">#24e1ec</color>
+    <color name="color_shopper_buy_now">#2AD6E0</color>
+</resources>

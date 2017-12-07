@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_view"
+android:background="@drawable/shape_recharge_bg"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+<RelativeLayout
+    android:id="@+id/rl_title"
+    android:background="@drawable/shape_recharge_taxi_bg"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:gravity="center_horizontal|center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/h_40">
+
+    <!--<ImageView
+        android:id="@+id/iv_texi"
+        android:layout_centerHorizontal="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/local_taxi"
+        />-->
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="车卡"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.cloud.tao.ui.widget.WrapContentListView
+        android:id="@+id/lv_card_number"
+        android:layout_marginTop="@dimen/h_15"
+        android:layout_marginBottom="@dimen/h_15"
+        android:layout_marginLeft="@dimen/w_5"
+        android:layout_marginRight="@dimen/w_5"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
+
+</LinearLayout>

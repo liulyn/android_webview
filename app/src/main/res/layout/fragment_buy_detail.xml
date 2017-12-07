@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <View
+        android:background="@color/gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_0.5"/>
+
+    <RelativeLayout
+        android:background="@color/gary_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <View
+                    android:background="@color/gray_line"
+                    android:layout_marginTop="@dimen/h_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_0.5"/>
+
+
+                <RelativeLayout
+                    android:paddingLeft="@dimen/w_10"
+                    android:paddingRight="@dimen/w_10"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="@dimen/h_50">
+                    <TextView
+                        android:id="@+id/tv_stock_score"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/personInfoText"
+                        android:text="库存云豆：2134"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/gray_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_0.5"/>
+
+                <RelativeLayout
+                    android:paddingLeft="@dimen/w_10"
+                    android:paddingRight="@dimen/w_10"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="@dimen/h_50">
+                    <TextView
+                        android:id="@+id/tv_available_score"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/personInfoText"
+                        android:text="可用云豆：2134"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/gray_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_0.5"/>
+
+                <RelativeLayout
+                    android:paddingLeft="@dimen/w_10"
+                    android:paddingRight="@dimen/w_10"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="@dimen/h_50">
+                    <TextView
+                        android:id="@+id/tv_return_score"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/personInfoText"
+                        android:text="待返云豆：2134"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/gray_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_0.5"/>
+
+
+
+
+                <View
+                    android:background="@color/gray_line"
+                    android:layout_marginTop="@dimen/h_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_0.5"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_cash_way"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/w_10"
+                    android:paddingRight="@dimen/w_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_50">
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        style="@style/personInfoText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/f16"
+                        android:text="搜索明细"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/gray_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_0.5"/>
+
+
+                <LinearLayout
+                    android:id="@+id/rl_city"
+                    android:paddingLeft="@dimen/w_10"
+                    android:paddingRight="@dimen/w_10"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:layout_height="@dimen/h_50">
+                    <EditText
+                        android:id="@+id/et_start_date"
+                        android:layout_weight="1"
+                        android:textColorHint="#EAEAEA"
+                        style="@style/personInfoEdit"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:hint="输入开始日期"
+                        android:inputType="date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:id="@+id/et_end_date"
+                        android:textColorHint="#EAEAEA"
+                        style="@style/personInfoEdit"
+                        android:layout_centerVertical="true"
+                        android:inputType="date"
+                        android:hint="输入结束日期"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <View
+                    android:background="@color/gray_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_0.5"/>
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="@dimen/h_50">
+                    <Button
+                        android:text="搜索"
+                        android:id="@+id/bt_search"
+                        android:background="#fff"
+                        android:textSize="@dimen/f14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/gray_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_0.5"/>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="#E6E6E6"
+                    android:layout_height="match_parent">
+
+
+
+
+                        <com.cloud.tao.ui.widget.WrapContentListView
+                            android:id="@+id/lv_buy_score_history"
+                            android:background="#E6E6E6"
+                            android:dividerHeight="@dimen/h_1"
+                            android:divider="#F7F7F7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                        </com.cloud.tao.ui.widget.WrapContentListView>
+                    <!--<com.etc.mall.ui.widget.RefreshLayout
+                        android:id="@+id/swipe_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+                    </com.etc.mall.ui.widget.RefreshLayout>-->
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+        <com.cloud.tao.ui.widget.LoadTipLayout
+            android:id="@+id/loadding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tip_loadding_src="@mipmap/ic_loading"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

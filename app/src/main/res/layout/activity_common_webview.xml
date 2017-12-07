@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.cloud.tao.ui.widget.TitleBar
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:title_left_icon_visible="true"
+        app:title_left_icon_src="@mipmap/ic_back"
+        app:title_right_visible="true"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.cloud.tao.ui.widget.LoadTipLayout
+            android:id="@+id/loadding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tip_loadding_src="@mipmap/ic_loading"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

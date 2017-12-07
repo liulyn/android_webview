@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/h_80">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_base_info"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="@dimen/w_10"
+        android:layout_marginTop="@dimen/h_10"
+        android:gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/h_20">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:text=""
+            android:textSize="@dimen/f14"
+
+            android:textColor="#313131"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_buy_state"
+            android:text="赠送"
+            android:layout_marginLeft="@dimen/w_10"
+            android:textStyle="bold"
+            android:textSize="@dimen/f14"
+            android:textColor="#313131"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_to_username"
+            android:text=""
+            android:layout_marginLeft="@dimen/w_10"
+            android:textSize="@dimen/f14"
+            android:textColor="#313131"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_buy_money"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/w_10"
+                android:textSize="@dimen/f14"
+                android:textColor="@color/red_gift_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/ll_base_info"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="@dimen/w_10"
+        android:layout_marginBottom="@dimen/h_5"
+        android:paddingLeft="@dimen/w_10"
+        android:layout_marginTop="@dimen/h_5"
+        android:gravity="left"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_rmark"
+            android:text=""
+            android:lines="2"
+            android:textSize="@dimen/f14"
+            android:textColor="#818181"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

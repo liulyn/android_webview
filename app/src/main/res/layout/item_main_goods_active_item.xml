@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main_good_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_base_selector"
+    android:padding="@dimen/w_4"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_cloud_active_goods_icon"
+        android:layout_width="@dimen/w_120"
+        android:layout_height="@dimen/w_120"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        />
+
+    <TextView
+        android:id="@+id/tv_cloud_active_goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/f13" />
+
+    <TextView
+        android:id="@+id/tv_cloud_active_goods_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/h_4"
+        android:maxLines="2"
+        android:textColor="@color/red_bg"
+        android:textSize="@dimen/f13" />
+
+
+</LinearLayout>

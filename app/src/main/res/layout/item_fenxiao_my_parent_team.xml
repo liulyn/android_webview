@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_fenxiao_my_parent_team_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_base_selector"
+        android:orientation="horizontal"
+        android:padding="@dimen/w_8">
+
+        <ImageView
+            android:id="@+id/tv_my_team_parent_icon"
+            android:layout_width="@dimen/w_56"
+            android:layout_height="@dimen/w_56"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside" />
+
+        <RelativeLayout
+            android:id="@+id/rl_my_team_parent_phone_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/w_12"
+            android:layout_toRightOf="@id/tv_my_team_parent_icon">
+
+            <TextView
+                android:id="@+id/tv_my_team_parent_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/f14" />
+
+            <TextView
+                android:id="@+id/tv_my_team_parent_rank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_my_team_parent_phone"
+                android:layout_marginTop="@dimen/h_4"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/f14" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tv_my_team_arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/w_4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/w_4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_my_team_parent_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/f14" />
+
+                <TextView
+                    android:id="@+id/tv_my_team_parent_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_4"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/f14" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ic_fenxiao_my_team_ex_right"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_ex_right" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.cloud.tao.ui.widget.WrapContentListView
+        android:id="@+id/wl_fenxiao_my_parent_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_fenxiao_my_parent_team_info"
+        android:background="#E6E6E6"
+        android:divider="#F7F7F7"
+        android:dividerHeight="@dimen/h_1"
+        android:visibility="gone"
+        android:listSelector="#E6E6E6"></com.cloud.tao.ui.widget.WrapContentListView>
+</LinearLayout>

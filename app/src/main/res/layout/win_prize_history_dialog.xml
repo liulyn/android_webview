@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/h_130">
+
+
+    <RelativeLayout
+        android:background="@color/nag_bg"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_40">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_centerInParent="true"
+            android:text="中奖明细"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:src="@mipmap/del_card"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/w_20"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/w_40"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_90">
+
+        <TextView
+            android:id="@+id/tv_reg_money"
+            android:layout_marginTop="@dimen/h_10"
+            android:text="中奖码："
+            android:textColor="#808080"
+            android:textSize="@dimen/f14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="@dimen/h_5"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="奖品类别："
+                android:textColor="#808080"
+                android:textSize="@dimen/f14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="￥123.00"
+                android:id="@+id/tv_counter_free"
+                android:textSize="@dimen/f14"
+                android:textColor="@color/red_gift_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/h_10"
+            android:layout_marginTop="@dimen/h_5"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="奖品名称："
+                android:textColor="#808080"
+                android:textSize="@dimen/f14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="已付款"
+                android:id="@+id/tv_state"
+                android:textSize="@dimen/f14"
+                android:textColor="@color/red_gift_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    
+
+</LinearLayout>

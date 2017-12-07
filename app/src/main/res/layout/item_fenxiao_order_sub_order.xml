@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_goods_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/w_12">
+
+    <ImageView
+        android:id="@+id/tv_order_details_icon"
+        android:layout_width="@dimen/w_60"
+        android:layout_height="@dimen/w_60"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_60"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/w_12"
+        android:layout_toRightOf="@id/tv_order_details_icon">
+
+        <TextView
+            android:id="@+id/tv_order_details_name"
+            android:layout_width="140dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/f14" />
+
+        <TextView
+            android:id="@+id/tv_order_details_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/w_6"
+            android:layout_toRightOf="@id/tv_order_details_name"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/f14" />
+
+        <TextView
+            android:id="@+id/tv_order_details_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/red_bg"
+            android:textSize="@dimen/f14" />
+    </RelativeLayout>
+
+</RelativeLayout>

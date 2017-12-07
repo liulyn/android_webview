@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/global_padding"
+                 >
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/w_56"
+        android:layout_height="@dimen/w_56"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerInside"
+        android:layout_marginRight="@dimen/global_padding"
+        />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        style="@style/TextView.Alpha80_16sp_Black"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_alignTop="@id/iv_icon"
+        android:layout_marginTop="@dimen/global_padding"
+        android:text="dfsdfdsf"
+        />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/TextView.Alpha50_14sp_Black"
+        android:layout_alignBottom="@id/tv_nickname"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/global_padding"
+        android:text="07-27 18:00"
+        />
+
+    <TextView
+        android:id="@+id/tv_comment_content"
+        style="@style/TextView.Alpha60_14sp_Black"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_below="@id/tv_nickname"
+        android:layout_marginBottom="@dimen/global_padding"
+        android:text="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+        />
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_goods_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/w_12">
+
+    <ImageView
+        android:id="@+id/tv_commission_details_icon"
+        android:layout_width="@dimen/w_60"
+        android:layout_height="@dimen/w_60"
+        android:scaleType="centerInside"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_main_goods"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_60"
+        android:layout_marginLeft="@dimen/w_12"
+        android:layout_toRightOf="@id/tv_commission_details_icon">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/tv_commission_details_name"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/f14" />
+
+            <TextView
+                android:id="@+id/tv_commission_details_number"
+                android:layout_toRightOf="@id/tv_commission_details_name"
+                android:layout_marginRight="@dimen/w_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/f14" />
+
+            <TextView
+                android:id="@+id/tv_commission_details_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/red_bg"
+                android:textSize="@dimen/f14" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv_commission_details_fenxiao_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/f14" />
+
+            <TextView
+                android:id="@+id/tv_commission_details_fenxiao_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/f14" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

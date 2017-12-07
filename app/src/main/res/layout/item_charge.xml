@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/global_padding"
+              android:gravity="center_vertical"
+    >
+
+    <TextView
+        style="@style/TextView.14sp_Common"
+        android:padding="@dimen/global_padding"
+        android:text="(1元=10金币)" />
+
+    <TextView
+        android:id="@+id/tv_online"
+        style="@style/TextView.Gray_Item"
+        android:gravity="right"
+        android:text="1¥"
+        />
+</LinearLayout>

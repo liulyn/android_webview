@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_litter_line"
+        android:orientation="horizontal"
+        android:padding="@dimen/global_padding"
+        >
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/TextView.Alpha50_14sp_Black"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/global_padding"
+            android:text="@string/cancel"
+            />
+
+        <TextView
+            style="@style/TextView.Alpha60_14sp_Black"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/global_padding"
+            android:text="@string/comment"
+            />
+
+        <TextView
+            android:id="@+id/tv_comment"
+            style="@style/TextView.14sp_Common"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/global_padding"
+            android:text="@string/send"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_comment"
+        style="@style/EditText.Content"
+        android:layout_height="match_parent"
+        android:hint="请输入评论内容"
+        />
+</LinearLayout>

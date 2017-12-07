@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_4"
+        android:textSize="@dimen/f14"
+        android:textColor="@color/nag_bg"
+        android:text="00" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/f14"
+        android:textColor="@color/text_gray"
+        android:text="天" />
+    <TextView
+        android:id="@+id/tv_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_4"
+        android:textSize="@dimen/f14"
+        android:textColor="@color/nag_bg"
+        android:text="00" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/f14"
+        android:textColor="@color/text_gray"
+        android:text="时" />
+    <TextView
+        android:id="@+id/tv_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_4"
+        android:textSize="@dimen/f14"
+        android:textColor="@color/nag_bg"
+        android:text="00" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/f14"
+        android:textColor="@color/text_gray"
+        android:text="分" />
+    <TextView
+        android:id="@+id/tv_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_4"
+        android:textSize="@dimen/f14"
+        android:textColor="@color/nag_bg"
+        android:text="00" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/f14"
+        android:textColor="@color/text_gray"
+        android:text="秒 后结束" />
+</LinearLayout>

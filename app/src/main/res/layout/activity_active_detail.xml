@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.cloud.tao.ui.widget.TitleBar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@color/colorPrimary"
+            app:title_left_icon_visible="true"
+            app:title_left_icon_src="@mipmap/ic_back"
+            app:title_right_visible="true"
+            app:title_text="活动详情"/>
+
+        <ScrollView
+            android:id="@+id/sv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tb"
+            android:layout_marginBottom="@dimen/w_48"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_game"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/global_padding">
+
+                    <ImageView
+                        android:id="@+id/iv_icon"
+                        android:layout_width="@dimen/w_56"
+                        android:layout_height="@dimen/w_56"
+                        android:layout_marginRight="@dimen/global_padding"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/ic_launcher"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/TextView.Alpha80_16sp_Black"
+                        android:layout_alignTop="@id/iv_icon"
+                        android:layout_marginTop="@dimen/global_padding"
+                        android:layout_toRightOf="@id/iv_icon"
+                        android:text="传奇网页"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_sort"
+                        style="@style/TextView.Alpha70_14sp_Black"
+                        android:layout_alignBottom="@id/tv_name"
+                        android:layout_marginLeft="@dimen/global_padding"
+                        android:layout_toRightOf="@id/tv_name"
+                        android:text="传奇网页"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_last_login_time"
+                        style="@style/TextView.Alpha60_14sp_Black"
+                        android:layout_alignBottom="@id/iv_icon"
+                        android:layout_marginBottom="@dimen/global_padding"
+                        android:layout_toRightOf="@id/iv_icon"
+                        android:text="上次登录:07-10 13:20"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_in_game"
+                        style="@style/Button.Comment"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="进入"
+                        />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_10"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/ic_active_tip"/>
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_des"-->
+                    <!--style="@style/TextView.Alpha60_14sp_Black"-->
+                    <!--android:layout_marginLeft="@dimen/global_padding"-->
+                    <!--android:layout_marginRight="@dimen/global_padding"-->
+                    <!--android:layout_marginTop="@dimen/h_10"-->
+                    <!--android:text="传奇世界最牛逼的职业解析，如何玩好道士..................传奇世界最牛逼的职业解析，如何玩好道士传奇世界最牛逼的职业解析，如何玩好道士."/>-->
+
+                <WebView
+                    android:id="@+id/wv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_content"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="@dimen/global_padding"-->
+                    <!--android:layout_marginTop="@dimen/h_10"-->
+                    <!--android:scaleType="centerInside"/>-->
+
+                <TextView
+                    android:id="@+id/tv_create_time"
+                    style="@style/TextView.Alpha60_14sp_Black"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/global_padding"
+                    android:layout_marginRight="@dimen/global_padding"
+                    android:text="07-10 13:20"
+                    />
+
+                <com.cloud.tao.ui.widget.WrapContentListView
+                    android:id="@+id/lv_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_47"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/global_padding"
+                android:layout_marginRight="@dimen/global_padding"
+                android:background="@color/colorPrimary"
+                />
+
+            <Button
+                android:id="@+id/btn_comment"
+                style="@style/TextView.14sp_Common"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_46"
+                android:background="@android:color/white"
+                android:text="@string/publish_comment"
+                />
+        </LinearLayout>
+
+        <com.cloud.tao.ui.widget.LoadTipLayout
+            android:id="@+id/loadding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tip_loadding_src="@mipmap/ic_loading"
+            android:layout_below="@id/tb"
+            android:visibility="gone" />
+    </RelativeLayout>
+</layout>

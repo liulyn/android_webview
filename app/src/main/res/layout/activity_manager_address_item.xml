@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="@dimen/h_60">
+
+    <RadioButton
+        android:id="@+id/rb_select_address"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/w_15"
+        android:background="@drawable/rbtn_sex_selector_on"
+        android:button="@null"
+        android:layout_marginRight="@dimen/w_15"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_toRightOf="@id/rb_select_address"
+        android:id="@+id/ll_select_address"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_username"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="#313131"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/w_10"
+                android:layout_toRightOf="@id/tv_username"
+                android:id="@+id/tv_phone_number"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="#313131"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_marginTop="@dimen/h_5"
+            android:text=""
+            android:textColor="#C8C8C8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_edit_address"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/w_15"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/add_address_chevron_right"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

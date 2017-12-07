@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gary_bg"
+        >
+
+
+
+        <com.cloud.tao.ui.widget.TitleBar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@color/nag_bg"
+            app:title_left_icon_src="@mipmap/ic_chevron_left"
+            app:title_left_icon_visible="true"
+            app:title_right_visible="true"
+            app:title_text="购物车"
+            app:title_text_color="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_top_handler"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_50"
+                android:background="@color/white"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true">
+
+
+                <RadioButton
+                    android:id="@+id/rb_top_goods_all"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="25dp"
+                    android:layout_marginLeft="@dimen/w_10"
+                    android:background="@drawable/rbtn_sex_selector_on"
+                    android:button="@null"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:text="全选"
+                    android:layout_marginLeft="@dimen/w_5"
+                    android:layout_toRightOf="@id/rb_top_goods_all"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/tv_del_goods"
+                    android:layout_marginRight="@dimen/w_10"
+                    android:text="删除"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_0.5"/>
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/h_50"
+                android:layout_marginBottom="@dimen/h_50"
+                >
+
+                        <LinearLayout
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+
+
+
+
+                            <com.cloud.tao.ui.widget.WrapContentListView
+                                android:background="@color/white"
+                                android:id="@+id/lv_goods"
+                                android:dividerHeight="@dimen/h_0.5"
+                                android:divider="#F4F4F4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+
+
+                    </LinearLayout>
+
+
+            </ScrollView>
+            <com.cloud.tao.ui.widget.LoadTipLayout
+                android:id="@+id/loadding"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:tip_loadding_src="@mipmap/ic_loading"
+                />
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_50"
+                android:layout_centerVertical="true"
+                android:layout_alignParentBottom="true">
+
+                <View
+                    android:layout_alignParentTop="true"
+                    android:background="@color/gray_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_0.5"/>
+
+                <RadioButton
+                    android:id="@+id/rb_goods_all"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="25dp"
+                    android:layout_marginLeft="@dimen/w_10"
+                    android:background="@drawable/rbtn_sex_selector_on"
+                    android:button="@null"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:text="全选"
+                    android:layout_marginLeft="@dimen/w_5"
+                    android:layout_toRightOf="@id/rb_goods_all"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+                <Button
+                    android:id="@+id/bt_go_pay"
+                    android:background="@drawable/my_order_pay_selector"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/f16"
+                    android:layout_width="@dimen/w_100"
+                    android:layout_height="match_parent"
+                    android:text="去结算(1)"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/tv_total_price"
+                    android:layout_toLeftOf="@id/bt_go_pay"
+                    android:layout_marginRight="@dimen/w_10"
+                    android:text="￥00"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/red_gift_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_toLeftOf="@id/tv_total_price"
+                    android:text="共计："
+                    android:layout_marginRight="@dimen/w_5"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

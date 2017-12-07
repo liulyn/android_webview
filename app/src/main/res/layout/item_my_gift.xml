@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="@dimen/global_padding" >
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/w_56"
+        android:layout_height="@dimen/w_56"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerInside"
+        android:layout_marginRight="@dimen/global_padding"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/TextView.Alpha80_16sp_Black"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_alignTop="@id/iv_icon"
+        android:layout_marginTop="@dimen/global_padding"
+        android:text="传奇网页"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_des"
+        style="@style/TextView.Alpha60_14sp_Black"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_alignBottom="@id/iv_icon"
+        android:layout_marginBottom="@dimen/global_padding"
+        android:text="充值 1:1"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/content_padding"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|right"
+        >
+        <TextView
+            style="@style/Button.Comment"
+            android:id="@+id/tv_user"
+            android:background="@drawable/btn_orange_5dp_solid_selector"
+            android:text="使用"
+            />
+
+        <TextView
+            android:id="@+id/tv_user_time"
+            style="@style/TextView.Alpha50_14sp_Black"
+            android:padding="@dimen/global_padding"
+            android:layout_below="@+id/tv_user"
+            android:text="有效期：120天"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

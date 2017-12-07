@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/global_padding"
+            >
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="@dimen/w_56"
+                android:layout_height="@dimen/w_56"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="centerInside"
+                android:layout_marginRight="@dimen/global_padding"
+                />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/TextView.Alpha80_16sp_Black"
+                android:layout_toRightOf="@id/iv_icon"
+                android:layout_alignTop="@id/iv_icon"
+                android:layout_marginTop="@dimen/global_padding"
+                android:text="传奇网页"
+                />
+
+            <TextView
+                android:id="@+id/tv_sort"
+                style="@style/TextView.Alpha70_14sp_Black"
+                android:layout_toRightOf="@id/tv_name"
+                android:layout_alignBottom="@id/tv_name"
+                android:layout_marginLeft="@dimen/global_padding"
+                android:text="传奇网页"
+                />
+
+            <TextView
+                android:id="@+id/tv_last_login_time"
+                style="@style/TextView.Alpha60_14sp_Black"
+                android:layout_toRightOf="@id/iv_icon"
+                android:layout_alignBottom="@id/iv_icon"
+                android:layout_marginBottom="@dimen/global_padding"
+                android:text="上次登录:07-10 13:20"
+                />
+
+            <TextView
+                style="@style/Button.Comment"
+                android:id="@+id/tv_in_game"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="进入"
+                />
+        </RelativeLayout>
+
+        <View
+            style="@style/View.line_width"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_gift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/global_padding"
+            >
+
+            <TextView
+                android:id="@+id/tv_tip"
+                style="@style/TextView.Alpha60_14sp_Black"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/global_padding"
+                android:layout_marginRight="@dimen/h_20"
+                android:layout_toLeftOf="@+id/tv_get_gift"
+                />
+
+            <com.cloud.tao.ui.widget.StepView
+                android:id="@+id/step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_tip"
+                android:layout_marginRight="@dimen/h_20"
+                android:layout_toLeftOf="@+id/tv_get_gift"
+                />
+            <!--<com.baoyachi.stepview.HorizontalStepView-->
+                <!--android:id="@+id/stepview"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/w_20"-->
+                <!--android:layout_below="@id/tv_tip"-->
+                <!--android:layout_marginRight="@dimen/h_20"-->
+                <!--android:layout_toLeftOf="@+id/tv_get_gift"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--/>-->
+
+            <TextView
+                android:id="@+id/tv_get_gift"
+                style="@style/Button.Comment"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_orange_5dp_solid_selector"
+                android:text="领取礼包"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    </layout>

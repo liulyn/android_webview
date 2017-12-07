@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gary_bg"
+        >
+
+
+        <com.cloud.tao.ui.widget.TitleBar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@color/nag_bg"
+            app:title_left_icon_src="@mipmap/ic_chevron_left"
+            app:title_left_icon_visible="true"
+            app:title_right_visible="true"
+            app:title_text="个人资料"
+            app:title_text_color="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+
+
+
+
+                    <LinearLayout
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:background="@color/gray_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"/>
+
+                        <RelativeLayout
+                            android:layout_marginLeft="@dimen/w_20"
+                            android:layout_marginRight="@dimen/w_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50">
+                            <TextView
+                                android:id="@+id/tv_username"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/personInfoText"
+                                android:text="@string/person_info_tv_username1"
+                                />
+                            <TextView
+                                android:id="@+id/tv_data_username"
+                                style="@style/personInfoText"
+                                android:text=""
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:background="@color/gray_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"/>
+
+
+
+                        <RelativeLayout
+                            android:layout_marginLeft="@dimen/w_20"
+                            android:layout_marginRight="@dimen/w_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50">
+                            <TextView
+                                android:id="@+id/tv_id"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/personInfoText"
+                                android:text="@string/person_info_tv_id"
+                                />
+                            <TextView
+                                android:id="@+id/tv_data_id"
+                                style="@style/personInfoText"
+                                android:text=""
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:background="@color/gray_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"/>
+
+
+                        <RelativeLayout
+                            android:layout_marginLeft="@dimen/w_20"
+                            android:layout_marginRight="@dimen/w_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50">
+                            <TextView
+                                android:id="@+id/tv_phone_number"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/personInfoText"
+                                android:text="@string/person_info_tv_phone_number1"
+                                />
+                            <TextView
+                                android:id="@+id/tv_data_phone_number"
+                                style="@style/personInfoText"
+                                android:text=""
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:background="@color/gray_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"/>
+
+
+
+
+                        <RelativeLayout
+                            android:layout_marginLeft="@dimen/w_20"
+                            android:layout_marginRight="@dimen/w_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50">
+                            <TextView
+                                android:id="@+id/tv_vip_card"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/personInfoText"
+                                android:text="@string/person_info_tv_vip_card"
+                                />
+                            <TextView
+                                android:id="@+id/tv_data_vip_card"
+                                style="@style/personInfoText"
+                                android:text=""
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:background="@color/gray_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"/>
+
+
+                        <RelativeLayout
+                            android:layout_marginLeft="@dimen/w_20"
+                            android:layout_marginRight="@dimen/w_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50">
+                            <TextView
+                                android:id="@+id/tv_leven_name_integral"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/personInfoText"
+                                android:text="@string/person_info_tv_leven_name"
+                                />
+                            <TextView
+                                android:id="@+id/tv_leven_name"
+                                style="@style/personInfoText"
+                                android:text=""
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:background="@color/gray_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"/>
+
+
+                        <RelativeLayout
+                            android:layout_marginLeft="@dimen/w_20"
+                            android:layout_marginRight="@dimen/w_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50">
+                            <TextView
+                                android:id="@+id/tv_leven_integral"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/personInfoText"
+                                android:text="@string/person_info_tv_leven_integral"
+                                />
+                            <TextView
+                                android:id="@+id/tv_data_score"
+                                style="@style/personInfoText"
+                                android:text=""
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:background="@color/gray_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"/>
+
+
+
+                        <RelativeLayout
+                            android:layout_marginLeft="@dimen/w_20"
+                            android:layout_marginRight="@dimen/w_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50">
+                            <TextView
+                                android:id="@+id/tv_available_integral"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/personInfoText"
+                                android:text="@string/person_info_tv_available_integral"
+                                />
+                            <TextView
+                                android:id="@+id/tv_data_available_integral"
+                                style="@style/personInfoText"
+                                android:text=""
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:background="@color/gray_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"/>
+
+
+                        <RelativeLayout
+                            android:layout_marginLeft="@dimen/w_20"
+                            android:layout_marginRight="@dimen/w_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50">
+                            <TextView
+                                android:id="@+id/tv_stay_return_tag"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/personInfoText"
+                                android:text="待返云豆"
+                                />
+                            <TextView
+                                android:id="@+id/tv_stay_return"
+                                style="@style/personInfoText"
+                                android:text=""
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:background="@color/gray_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"/>
+
+
+
+                        <RelativeLayout
+                            android:layout_marginLeft="@dimen/w_20"
+                            android:layout_marginRight="@dimen/w_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50">
+                            <TextView
+                                android:id="@+id/tv_remainder"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/personInfoText"
+                                android:text="@string/person_info_tv_remainder"
+                                />
+                            <TextView
+                                android:id="@+id/tv_data_remainder"
+                                style="@style/personInfoText"
+                                android:text=""
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:background="@color/gray_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"/>
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+            </ScrollView>
+            <com.cloud.tao.ui.widget.LoadTipLayout
+                android:id="@+id/loadding"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:tip_loadding_src="@mipmap/ic_loading"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

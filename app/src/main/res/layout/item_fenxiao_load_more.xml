@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.cloud.tao.ui.widget.LoadMoreRecyclerView
+            android:id="@+id/lr_fenxiao_load_list"
+            android:background="@color/gary_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@android:color/white" />
+    </LinearLayout>
+</layout>

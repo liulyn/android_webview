@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/h_8"
+        android:paddingTop="@dimen/h_8"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_goods"
+            android:src="@mipmap/app_ico"
+            android:layout_marginLeft="@dimen/w_8"
+
+            android:layout_width="@dimen/w_90"
+            android:layout_height="@dimen/w_90"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/iv_goods"
+            android:layout_marginLeft="@dimen/w_5"
+            android:layout_marginRight="@dimen/w_8"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_90">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_title"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="#444444"
+                    android:textSize="@dimen/f14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:text="x1"
+                    android:textColor="@color/red_gift_num"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:id="@+id/tv_desc"
+                android:layout_marginTop="@dimen/h_5"
+                android:lines="2"
+                android:ellipsize="end"
+                android:textColor="#C9C9C9"
+                android:textSize="@dimen/f14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:text=""
+                    android:textColor="@color/red_gift_num"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/bt_refund"
+                    android:text="申请退货"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"
+                    android:textSize="@dimen/f10"
+                    android:background="@drawable/my_order_pay_selector"
+                    android:layout_width="@dimen/w_60"
+                    android:layout_height="@dimen/h_24" />
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+

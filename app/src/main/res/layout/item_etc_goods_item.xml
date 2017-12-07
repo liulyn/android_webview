@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_goods_item"
+    android:background="@drawable/bg_base_selector"
+    android:padding="@dimen/w_6"
+    >
+
+    <ImageView
+        android:id="@+id/tv_main_goods_icon"
+        android:layout_width="@dimen/w_90"
+        android:layout_height="@dimen/w_90"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+         />
+
+    <RelativeLayout
+        android:id="@+id/rl_main_goods"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/global_padding"
+        android:layout_height="@dimen/w_90"
+        android:layout_toRightOf="@id/tv_main_goods_icon">
+
+        <TextView
+            android:id="@+id/tv_main_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/f12" />
+
+        <TextView
+            android:id="@+id/tv_main_goods_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_main_goods_name"
+            android:layout_marginTop="@dimen/global_padding"
+            android:textColor="@color/text_gray_01" />
+
+        <TextView
+            android:id="@+id/tv_main_goods_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/red_bg"
+            android:textSize="@dimen/f12" />
+    </RelativeLayout>
+
+</RelativeLayout>

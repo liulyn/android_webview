@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gary_bg"
+        android:orientation="vertical">
+
+        <com.cloud.tao.ui.widget.TitleBar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:layout_alignParentTop="true"
+            android:background="@color/nag_bg"
+            app:title_left_icon_src="@mipmap/ic_chevron_left"
+            app:title_left_icon_visible="true"
+            app:title_right_visible="true"
+            app:title_text="推荐云豆奖励"
+            app:title_text_color="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/h_6"
+            android:background="@color/gary_bg">
+
+            <FrameLayout
+                android:id="@+id/rl_userinfo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_110"
+                android:layout_alignParentTop="true"
+                android:background="#5584D2">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:src="@mipmap/icon_background_vip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/h_10"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/icon_card_tease_white" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/w_8"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_vip_recommend_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_white_bg"
+                            android:textSize="@dimen/f15"
+                            android:text="￥0"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_vip_id"
+                            android:layout_marginTop="@dimen/h_4"
+                            android:textColor="@color/color_white_bg"
+                            android:textSize="@dimen/f13"
+                            android:text="奖励总云豆数额"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v_my_team_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="@dimen/h_6"
+            android:background="@color/item_line" />
+
+        <com.cloud.tao.ui.widget.LoadMoreRecyclerView
+            android:id="@+id/lv_vip_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white_bg"
+            android:listSelector="@android:color/white" />
+    </LinearLayout>
+</layout>

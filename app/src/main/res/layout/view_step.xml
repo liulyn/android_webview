@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_sign_pointer"
+        />
+    <View
+        android:layout_width="@dimen/w_20"
+        android:layout_height="@dimen/w_1"
+        android:background="@color/gray_line"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_sign_pointer"
+        />
+    <View
+        android:layout_width="@dimen/w_20"
+        android:layout_height="@dimen/w_1"
+        android:background="@color/gray_line"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_sign_pointer"
+        />
+    <View
+        android:layout_width="@dimen/w_20"
+        android:layout_height="@dimen/w_1"
+        android:background="@color/gray_line"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_sign_pointer"
+        />
+    <View
+        android:layout_width="@dimen/w_20"
+        android:layout_height="@dimen/w_1"
+        android:background="@color/gray_line"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_sign_pointer"
+        />
+    <View
+        android:layout_width="@dimen/w_20"
+        android:layout_height="@dimen/w_1"
+        android:background="@color/gray_line"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_sign_pointer"
+        />
+    <View
+        android:layout_width="@dimen/w_20"
+        android:layout_height="@dimen/w_1"
+        android:background="@color/gray_line"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_sign_pointer"
+        />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="@dimen/global_padding"
+              android:gravity="center"
+              android:background="@drawable/btn_circle_top_white_5dp_solid_selector" >
+    <TextView
+        style="@style/TextView.Alpha80_14sp_Black"
+        android:text="已复制卡码，立即进入使用"
+        />
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/global_padding"
+        android:textSize="@dimen/f14"
+        android:layout_marginTop="@dimen/h_20"
+        android:textColor="@color/orange"
+        android:gravity="center"
+        android:text="@string/sure"
+        />
+</LinearLayout>

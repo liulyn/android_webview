@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:peng="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gary_bg"
+        android:orientation="vertical">
+
+
+        <com.cloud.tao.ui.widget.TitleBar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:layout_alignParentTop="true"
+            android:background="@color/nag_bg"
+            app:title_left_icon_src="@mipmap/ic_chevron_left"
+            app:title_left_icon_visible="true"
+            app:title_right_visible="true"
+            app:title_text="用户中心"
+            app:title_text_color="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_6"
+                        android:background="@color/gary_bg">
+
+
+                        <FrameLayout
+                            android:id="@+id/rl_userinfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_110"
+                            android:layout_alignParentTop="true"
+                            android:background="#5584D2">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:src="@mipmap/icon_background_vip" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/h_16"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="@dimen/w_12"
+                                    android:src="@mipmap/icon_top_vip" />
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/w_8">
+
+                                    <TextView
+                                        android:id="@+id/tv_vip_id"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/color_white_bg"
+                                        android:textSize="@dimen/f15"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_vip_rank_name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/tv_vip_id"
+                                        android:layout_marginTop="@dimen/h_6"
+                                        android:textColor="@color/color_white_bg"
+                                        android:textSize="@dimen/f13"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/h_90"
+                            android:layout_marginLeft="@dimen/w_8"
+                            android:layout_marginRight="@dimen/w_8"
+                            android:paddingTop="@dimen/h_4"
+                            android:paddingBottom="@dimen/h_4"
+                            android:background="@drawable/shape_login_top">
+
+                            <TextView
+                                android:id="@+id/tv_account"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:text="个人账户"
+                                android:textColor="@color/text_gray"
+                                android:textSize="@dimen/f13" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_account"
+                                android:layout_marginTop="@dimen/h_6">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="36dp"
+                                        android:layout_height="36dp"
+                                        android:src="@mipmap/icon_commission_vip" />
+
+                                    <TextView
+                                        android:id="@+id/tv_commission_total"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/h_4"
+                                        android:textColor="@color/text_gray"
+                                        android:textSize="@dimen/f12" />
+
+                                    <TextView
+                                        android:id="@+id/tv_commission_confirmed"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/h_4"
+                                        android:textColor="@color/text_gray"
+                                        android:textSize="@dimen/f12" />
+
+                                    <Button
+                                        android:id="@+id/bt_commission_exchange"
+                                        android:layout_width="60dp"
+                                        android:layout_height="36dp"
+                                        android:layout_gravity="right"
+                                        android:layout_marginRight="@dimen/w_12"
+                                        android:layout_marginTop="@dimen/h_6"
+                                        android:background="@drawable/selector_round_rectangle_bt"
+                                        android:text="兑换"
+                                        android:textColor="@color/color_white_bg"
+                                        android:textSize="@dimen/f12" />
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="@dimen/w_0.5"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/item_line"
+                                    android:layout_marginBottom="@dimen/h_6"/>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="36dp"
+                                        android:layout_height="36dp"
+                                        android:src="@mipmap/icon_card_tease_vip" />
+
+                                    <TextView
+                                        android:id="@+id/tv_available_integral"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/h_4"
+                                        android:text="大云豆"
+                                        android:textColor="@color/text_gray"
+                                        android:textSize="@dimen/f12" />
+
+                                    <TextView
+                                        android:id="@+id/tv_remain_socre"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/h_4"
+                                        android:text="小云豆"
+                                        android:textColor="@color/text_gray"
+                                        android:textSize="@dimen/f12" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/h_6">
+
+                                        <Button
+                                            android:id="@+id/bt_customization"
+                                            android:layout_width="60dp"
+                                            android:layout_height="36dp"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_marginLeft="@dimen/w_12"
+                                            android:background="@drawable/selector_round_rectangle_bt"
+                                            android:text="定制"
+                                            android:textColor="@color/color_white_bg"
+                                            android:textSize="@dimen/f12" />
+
+                                        <Button
+                                            android:id="@+id/bt_customization_exchange"
+                                            android:layout_width="60dp"
+                                            android:layout_height="36dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="@dimen/w_12"
+                                            android:background="@drawable/selector_round_rectangle_bt"
+                                            android:text="兑换"
+                                            android:textColor="@color/color_white_bg"
+                                            android:textSize="@dimen/f12" />
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_6"
+                    android:background="@color/color_white_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_4"
+                        android:text="关于云豆"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/w_4"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/f13" />
+                    
+                    <GridView
+                        android:id="@+id/gv_about_active"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="0dp"
+                        android:numColumns="4"
+                        android:layout_marginTop="@dimen/h_4"
+                        android:paddingBottom="@dimen/h_4"
+                        android:paddingTop="@dimen/h_4" />
+
+                    </LinearLayout>
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/h_60"
+                        android:layout_marginTop="@dimen/h_6"
+                        android:background="#ffffff"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_my_remainder"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_base_selector">
+
+                            <LinearLayout
+                                android:id="@+id/llt_fragment_discover_star"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/iv_fragment_discover_item_icon_star"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/person_info_tv_my_remainder"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/f14" />
+
+                                <TextView
+                                    android:id="@+id/tv_my_remainder"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/iv_fragment_discover_item_icon"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="3dp"
+                                    android:text=""
+                                    android:textColor="@android:color/holo_red_light"
+                                    android:textSize="@dimen/f14" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+                        <View
+
+                            android:layout_width="@dimen/w_1"
+                            android:layout_height="@dimen/h_30"
+                            android:layout_marginTop="@dimen/h_15"
+                            android:background="@color/gray_line" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_stay_goods"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_base_selector">
+
+                            <LinearLayout
+                                android:id="@+id/llt_fragment_discover_star1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/iv_fragment_discover_item_icon_star1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/person_info_tv_available_integral"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/f14" />
+
+                                <TextView
+                                    android:id="@+id/tv_available_integral"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/iv_fragment_discover_item_icon1"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="3dp"
+                                    android:text=""
+                                    android:textColor="@android:color/holo_red_light"
+                                    android:textSize="@dimen/f14" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+                        <View
+
+                            android:layout_width="@dimen/w_1"
+                            android:layout_height="@dimen/h_30"
+                            android:layout_marginTop="@dimen/h_15"
+                            android:background="@color/gray_line" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_base_selector">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_remain_socre_tag"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="待返云豆"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/f14" />
+
+                                <TextView
+                                    android:id="@+id/tv_remain_socre"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_remain_socre_tag"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="3dp"
+                                    android:text=""
+                                    android:textColor="@android:color/holo_red_light"
+                                    android:textSize="@dimen/f14" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>-->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/h_0.5"
+                        android:background="@color/gray_line" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_10"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"
+                            android:background="@color/gray_line" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_my_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50"
+                            android:background="@drawable/bg_base_selector"
+                            android:paddingLeft="@dimen/w_20"
+                            android:paddingRight="@dimen/w_20">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="@dimen/w_10"
+                                android:text="@string/person_info_tv_my_info" />
+
+                            <com.cloud.tao.ui.widget.CustomRadioButtonTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal"
+                                peng:peng_drawableLeft="@mipmap/add_address_chevron_right"
+                                peng:peng_drawableLeftHeight="7dp"
+                                peng:peng_drawableLeftWith="7dp" />
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"
+                            android:background="@color/gray_line" />
+
+
+                        <!--<RelativeLayout
+                            android:id="@+id/rl_legal_right_explain"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50"
+                            android:background="@drawable/bg_base_selector"
+                            android:paddingLeft="@dimen/w_20"
+                            android:paddingRight="@dimen/w_20">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="@dimen/w_10"
+                                android:text="@string/person_info_tv_legal_right_explain" />
+
+                            <com.cloud.tao.ui.widget.CustomRadioButtonTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal"
+                                peng:peng_drawableLeft="@mipmap/add_address_chevron_right"
+                                peng:peng_drawableLeftHeight="7dp"
+                                peng:peng_drawableLeftWith="7dp" />
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"
+                            android:background="@color/gray_line" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_integral_cash"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50"
+                            android:background="@drawable/bg_base_selector"
+                            android:paddingLeft="@dimen/w_20"
+                            android:paddingRight="@dimen/w_20">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="@dimen/w_10"
+                                android:text="@string/person_info_tv_integral_cash" />
+
+                            <com.cloud.tao.ui.widget.CustomRadioButtonTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal"
+                                peng:peng_drawableLeft="@mipmap/add_address_chevron_right"
+                                peng:peng_drawableLeftHeight="7dp"
+                                peng:peng_drawableLeftWith="7dp" />
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"
+                            android:background="@color/gray_line" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_integral_return"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50"
+                            android:background="@drawable/bg_base_selector"
+                            android:paddingLeft="@dimen/w_20"
+                            android:paddingRight="@dimen/w_20">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="@dimen/w_10"
+                                android:text="@string/person_info_tv_integral_return" />
+
+                            <com.cloud.tao.ui.widget.CustomRadioButtonTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal"
+                                peng:peng_drawableLeft="@mipmap/add_address_chevron_right"
+                                peng:peng_drawableLeftHeight="7dp"
+                                peng:peng_drawableLeftWith="7dp" />
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"
+                            android:background="@color/gray_line" />-->
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_promotion_vip"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50"
+                            android:background="@drawable/bg_base_selector"
+                            android:paddingLeft="@dimen/w_20"
+                            android:paddingRight="@dimen/w_20">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="@dimen/w_10"
+                                android:text="@string/person_info_tv_promotion_vip" />
+
+                            <com.cloud.tao.ui.widget.CustomRadioButtonTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal"
+                                peng:peng_drawableLeft="@mipmap/add_address_chevron_right"
+                                peng:peng_drawableLeftHeight="7dp"
+                                peng:peng_drawableLeftWith="7dp" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"
+                            android:background="@color/gray_line" />
+
+
+                        <!--<RelativeLayout
+                            android:id="@+id/rl_score_pay_qr_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50"
+                            android:background="@drawable/bg_base_selector"
+                            android:paddingLeft="@dimen/w_20"
+                            android:paddingRight="@dimen/w_20">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="@dimen/w_10"
+                                android:text="@string/person_info_tv_score_pay" />
+
+                            <com.cloud.tao.ui.widget.CustomRadioButtonTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal"
+                                peng:peng_drawableLeft="@mipmap/add_address_chevron_right"
+                                peng:peng_drawableLeftHeight="7dp"
+                                peng:peng_drawableLeftWith="7dp" />
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"
+                            android:background="@color/gray_line" />-->
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_my_need_prize"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50"
+                            android:background="@drawable/bg_base_selector"
+                            android:paddingLeft="@dimen/w_20"
+                            android:paddingRight="@dimen/w_20">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="@dimen/w_10"
+                                android:text="我要抽奖" />
+
+                            <com.cloud.tao.ui.widget.CustomRadioButtonTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal"
+                                peng:peng_drawableLeft="@mipmap/add_address_chevron_right"
+                                peng:peng_drawableLeftHeight="7dp"
+                                peng:peng_drawableLeftWith="7dp" />
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"
+                            android:background="@color/gray_line" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_winning_prize"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50"
+                            android:background="@drawable/bg_base_selector"
+                            android:paddingLeft="@dimen/w_20"
+                            android:paddingRight="@dimen/w_20">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="@dimen/w_10"
+                                android:text="中奖记录" />
+
+                            <com.cloud.tao.ui.widget.CustomRadioButtonTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal"
+                                peng:peng_drawableLeft="@mipmap/add_address_chevron_right"
+                                peng:peng_drawableLeftHeight="7dp"
+                                peng:peng_drawableLeftWith="7dp" />
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"
+                            android:background="@color/gray_line" />
+
+                        <!--<RelativeLayout
+                            android:id="@+id/rl_bind_entity_card"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50"
+                            android:background="@drawable/bg_base_selector"
+                            android:paddingLeft="@dimen/w_20"
+                            android:paddingRight="@dimen/w_20"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="@dimen/w_10"
+                                android:text="绑定实体卡卡号" />
+
+                            <com.cloud.tao.ui.widget.CustomRadioButtonTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal"
+                                peng:peng_drawableLeft="@mipmap/add_address_chevron_right"
+                                peng:peng_drawableLeftHeight="7dp"
+                                peng:peng_drawableLeftWith="7dp" />
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"
+                            android:background="@color/gray_line" />-->
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_prepaid_card_recharge"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50"
+                            android:background="@drawable/bg_base_selector"
+                            android:paddingLeft="@dimen/w_20"
+                            android:paddingRight="@dimen/w_20">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="@dimen/w_10"
+                                android:text="云豆卡充值" />
+
+                            <com.cloud.tao.ui.widget.CustomRadioButtonTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal"
+                                peng:peng_drawableLeft="@mipmap/add_address_chevron_right"
+                                peng:peng_drawableLeftHeight="7dp"
+                                peng:peng_drawableLeftWith="7dp" />
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"
+                            android:background="@color/gray_line" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_prepaid_card_recharge_his"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_50"
+                            android:background="@drawable/bg_base_selector"
+                            android:paddingLeft="@dimen/w_20"
+                            android:paddingRight="@dimen/w_20">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="@dimen/w_10"
+                                android:text="云豆卡购买记录" />
+
+                            <com.cloud.tao.ui.widget.CustomRadioButtonTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal"
+                                peng:peng_drawableLeft="@mipmap/add_address_chevron_right"
+                                peng:peng_drawableLeftHeight="7dp"
+                                peng:peng_drawableLeftWith="7dp" />
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/h_0.5"
+                            android:background="@color/gray_line" />
+
+
+                    </LinearLayout>
+
+
+                    <com.cloud.tao.ui.widget.WrapContentListView
+                        android:id="@+id/lv_zixun"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/h_6"
+                        tools:listitem="@layout/item_me_zixun" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <com.cloud.tao.ui.widget.LoadTipLayout
+                android:id="@+id/loadding"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:tip_loadding_src="@mipmap/ic_loading" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

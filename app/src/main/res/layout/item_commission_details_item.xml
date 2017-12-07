@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/h_12"
+    android:background="@color/color_white_bg"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:padding="@dimen/w_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/tv_commission_details_create_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/f14" />
+
+        <TextView
+            android:id="@+id/tv_commission_details_create_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/f14" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="@color/item_line"/>
+
+    <com.cloud.tao.ui.widget.WrapContentListView
+        android:id="@+id/lv_commission_details_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/item_line"
+        android:dividerHeight="0.4dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="true"
+        android:listSelector="@android:color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_0.5"
+        android:background="@color/item_line_cover"/>
+
+</LinearLayout>

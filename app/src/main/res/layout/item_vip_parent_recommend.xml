@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_vip_recommend_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/h_12"
+        android:paddingBottom="@dimen/h_12"
+        android:background="@drawable/bg_base_selector"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ic_vip_recommend_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray"
+            android:layout_marginLeft="@dimen/w_4"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/f14" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/w_4"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_vip_parent_recommend_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:layout_marginLeft="@dimen/w_4"
+                android:textSize="@dimen/f14" />
+
+
+            <ImageView
+                android:id="@+id/ic_vip_recommend_ex_right"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_ex_right" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.cloud.tao.ui.widget.WrapContentListView
+        android:id="@+id/wl_vip_recommend_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E6E6E6"
+        android:divider="#F7F7F7"
+        android:dividerHeight="@dimen/h_1"
+        android:visibility="gone"
+        android:listSelector="#E6E6E6"></com.cloud.tao.ui.widget.WrapContentListView>
+</LinearLayout>

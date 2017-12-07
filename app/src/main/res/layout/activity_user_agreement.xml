@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.cloud.tao.ui.widget.TitleBar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:layout_alignParentTop="true"
+            android:background="@color/nag_bg"
+            app:title_left_icon_src="@mipmap/ic_chevron_left"
+            app:title_left_icon_visible="true"
+            app:title_right_visible="true"
+            app:title_text="“云之道”合伙人服务协议"
+            app:title_text_color="@android:color/white" />
+
+        <ScrollView
+            android:layout_below="@id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/w_6"
+            android:layout_marginRight="@dimen/w_6"
+            android:layout_marginBottom="@dimen/w_6"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/tv_user_agreement_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_6"
+                    android:layout_centerHorizontal="true"
+                    android:text="“云之道”合伙人服务协议"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/f14" />
+
+                <TextView
+                    android:id="@+id/tv_user_agreement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_user_agreement_title"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/f14" />
+
+                <TextView
+                    android:id="@+id/tv_user_agreement_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/h_12"
+                    android:layout_below="@id/tv_user_agreement"
+                    android:text="云之道（深圳）网络科技有限公司"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/f14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/tv_user_agreement_company"
+                    android:layout_marginTop="@dimen/h_6"
+                    android:text="二 〇 一 七 年"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/f14" />
+            </RelativeLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</layout>

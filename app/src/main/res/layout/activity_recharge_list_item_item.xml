@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/w_8"
+    android:paddingRight="@dimen/w_15"
+    android:layout_height="@dimen/h_30">
+
+        <TextView
+            android:id="@+id/tv_card_number"
+            android:text="123456"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <ImageView
+            android:id="@+id/iv_del"
+            android:src="@mipmap/del_card"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="12dp"
+            android:layout_height="12dp" />
+
+</RelativeLayout>

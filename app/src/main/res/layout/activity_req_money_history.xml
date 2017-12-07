@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gary_bg"
+        >
+
+        <com.cloud.tao.ui.widget.TitleBar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@color/nag_bg"
+            app:title_left_icon_src="@mipmap/ic_chevron_left"
+            app:title_left_icon_visible="true"
+            app:title_right_visible="true"
+            app:title_text="查询购买记录"
+            app:title_text_color="@android:color/white" />
+
+
+        <RelativeLayout
+            android:background="@color/gary_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                        <LinearLayout
+                            android:background="@color/gary_bg"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <LinearLayout
+                                android:layout_marginLeft="@dimen/w_5"
+                                android:layout_marginTop="@dimen/h_5"
+                                android:layout_marginRight="@dimen/w_5"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/h_25">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="@dimen/f14"
+                                    android:text="创建时间"
+                                    android:gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="@dimen/f14"
+                                    android:text="汇总金额"
+                                    android:gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="@dimen/f14"
+                                    android:text="状态"
+                                    android:gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="@dimen/f14"
+                                    android:text="操作"
+                                    android:textColor="#BC3151"
+                                    android:gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+
+                            <com.cloud.tao.ui.widget.RefreshLayout
+                                android:id="@+id/swipe_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                            <ListView
+                                android:id="@+id/lv_history"
+                                android:layout_marginLeft="@dimen/w_5"
+                                android:layout_marginRight="@dimen/w_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:listSelector="@android:color/white"
+                                android:divider="@null"
+                                android:dividerHeight="@dimen/h_0.5"
+                                />
+
+                            </com.cloud.tao.ui.widget.RefreshLayout>
+
+
+
+                    </LinearLayout>
+
+
+            </ScrollView>
+            <com.cloud.tao.ui.widget.LoadTipLayout
+                android:id="@+id/loadding"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:tip_loadding_src="@mipmap/ic_loading"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

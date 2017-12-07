@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:peng="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gary_bg"
+        android:orientation="vertical">
+
+        <com.cloud.tao.ui.widget.TitleBar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:layout_alignParentTop="true"
+            android:background="@color/nag_bg"
+            app:title_left_icon_src="@mipmap/ic_chevron_left"
+            app:title_left_icon_visible="true"
+            app:title_right_visible="true"
+            app:title_text="设置"
+            app:title_text_color="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_setting_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_50"
+                    android:background="@drawable/bg_base_selector"
+                    android:paddingLeft="@dimen/w_4"
+                    android:paddingRight="@dimen/w_20">
+
+                    <TextView
+                        android:id="@+id/tv_binding_mobile_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/w_4"
+                        android:textSize="@dimen/f14"
+                        android:textColor="@color/text_gray"
+                        android:text="@string/user_setting_mobile" />
+
+                    <TextView
+                        android:id="@+id/tv_binding_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/tv_binding_mobile_hint"
+                        android:layout_marginLeft="@dimen/w_12"
+                        android:textColor="@color/text_gray_02"
+                        android:textSize="@dimen/f14"
+                        />
+
+                    <com.cloud.tao.ui.widget.CustomRadioButtonTextView
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        peng:peng_drawableLeft="@mipmap/add_address_chevron_right"
+                        peng:peng_drawableLeftHeight="8dp"
+                        peng:peng_drawableLeftWith="8dp"/>
+                </RelativeLayout>
+                <View
+                    android:background="@color/gray_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_0.5"/>
+                <RelativeLayout
+                    android:id="@+id/rl_setting_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_50"
+                    android:background="@drawable/bg_base_selector"
+                    android:paddingLeft="@dimen/w_4"
+                    android:paddingRight="@dimen/w_20">
+
+                    <TextView
+                        android:id="@+id/tv_reset_pwd_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/w_4"
+                        android:textSize="@dimen/f14"
+                        android:textColor="@color/text_gray"
+                        android:text="@string/user_setting_pwd" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/tv_reset_pwd_hint"
+                        android:text="修改密码"
+                        android:layout_marginLeft="@dimen/w_12"
+                        android:textColor="@color/text_gray_02"
+                        android:textSize="@dimen/f14"
+                        />
+
+                    <com.cloud.tao.ui.widget.CustomRadioButtonTextView
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        peng:peng_drawableLeft="@mipmap/add_address_chevron_right"
+                        peng:peng_drawableLeftHeight="8dp"
+                        peng:peng_drawableLeftWith="8dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_setting_upgrade"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_50"
+                    android:layout_marginTop="@dimen/h_12"
+                    android:background="@drawable/bg_base_selector"
+                    android:paddingLeft="@dimen/w_4"
+                    android:paddingRight="@dimen/w_20">
+
+                    <TextView
+                        android:id="@+id/tv_setting_upgrade_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/w_4"
+                        android:textSize="@dimen/f14"
+                        android:textColor="@color/text_gray"
+                        android:text="检查更新" />
+
+                    <com.cloud.tao.ui.widget.CustomRadioButtonTextView
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        peng:peng_drawableLeft="@mipmap/add_address_chevron_right"
+                        peng:peng_drawableLeftHeight="8dp"
+                        peng:peng_drawableLeftWith="8dp"/>
+                </RelativeLayout>
+                <View
+                    android:background="@color/gray_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_0.5"/>
+                <RelativeLayout
+                    android:id="@+id/rl_about_we"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_50"
+                    android:background="@drawable/bg_base_selector"
+                    android:paddingLeft="@dimen/w_4"
+                    android:paddingRight="@dimen/w_20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/w_4"
+                        android:textSize="@dimen/f14"
+                        android:textColor="@color/text_gray"
+                        android:text="关于我们" />
+
+
+                    <com.cloud.tao.ui.widget.CustomRadioButtonTextView
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        peng:peng_drawableLeft="@mipmap/add_address_chevron_right"
+                        peng:peng_drawableLeftHeight="8dp"
+                        peng:peng_drawableLeftWith="8dp"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/bt_forget_account"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/w_22"
+                android:layout_marginRight="@dimen/w_22"
+                android:layout_marginLeft="@dimen/w_22"
+                android:background="@drawable/selector_round_rectangle_bt"
+                android:text="退出账户"
+                android:textColor="@color/color_white_bg"
+                android:textSize="@dimen/f16" />
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

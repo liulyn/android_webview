@@ -1,0 +1,162 @@
+<resources>
+    <string name="app_name">博大新团购</string>
+
+    <string name="networkerror">网络连接不可用，请检查当前网络状态</string>
+    <string name="permission">权限(permission)</string>
+    <string name="no_permissions">应用需要必要的运行权限</string>
+
+    <string name="settings">设置</string>
+    <string name="help">帮助</string>
+    <string name="string_help_text">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="quit">退出</string>
+    <string name="login_onkey">一键登录</string>
+    <string name="login_wx">微信登录</string>
+    <string name="register_fail">注册失败！</string>
+    <string name="login_fail">登录失败！</string>
+    <string name="login">登录</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="input_username_tip">请输入手机号或邮箱</string>
+    <string name="input_pwd_tip">请输入密码</string>
+    <string name="input_phone">输入手机号</string>
+    <string name="input_new_pwd">输入新密码</string>
+    <string name="input_code">输入验证码</string>
+
+    <string name="agin_get_code">请重新获取验证码</string>
+    <string name="input_code_diffrence">您输入的验证码有误</string>
+    <string name="my_game">我的</string>
+    <string name="tip_exit_app">再按一次退出应用</string>
+
+    <string name="nickname_is_not_null">昵称不能为空</string>
+    <string name="input_your_phone_tip">请输入您的手机号码</string>
+    <string name="input_msg_code_tip">请输入验证码</string>
+    <string name="get_msg_code">获取验证码</string>
+    <string name="bind_phone">绑定手机号</string>
+    <string name="unbind_phone">解绑手机号</string>
+    <string name="input_old_pwd_tip">请输入原密码</string>
+    <string name="input_new_pwd_tip">请输入新密码</string>
+    <string name="complete">完成</string>
+    <string name="input_old_pwd_isnull_tip">原密码不能为空</string>
+    <string name="input_new_pwd_isnull_tip">新密码不能为空</string>
+    <string name="pwds_is_equal">原密码与新密码一致</string>
+    <string name="copright_41188_com_all_rights_reserved">Copright @41188.com.All Rights Reserved.</string>
+    <string name="upload_ico_fial_tip">头像上传失败了</string>
+    <string name="publish_comment">发布评论</string>
+    <string name="send">发送</string>
+    <string name="comment">评论</string>
+    <string name="cancel">取消</string>
+    <string name="input_comment_content_not_null">评论内容不能为空</string>
+    <string name="login_first_tip">请先登录！</string>
+    <string name="going_game">进入</string>
+    <string name="new_game">本周最新</string>
+    <string name="online_game"></string>
+    <string name="smallgame">小</string>
+    <string name="search">搜索</string>
+    <string name="charger_detail">充值明细</string>
+    <string name="consum_detail">消费明细</string>
+    <string name="sure">确认</string>
+    <string name="zixun_detail_title">资讯详情</string>
+
+
+    <string name="tag_code">tag_code</string>
+    <string name="code_fail_tip">您暂时未达到条件</string>
+
+    <!--云之道的内容-->
+    <string name="dialog_common_title">提示</string>
+    <string name="dialog_common_doing">操作中...</string>
+    <string name="dialog_common_loading">加载中...</string>
+
+    <string name="login_hint">登录</string>
+    <string name="register_hint">注册</string>
+    <string name="login_account_hint">手机号</string>
+    <string name="login_password_hint">密码</string>
+    <string name="dialog_login_doing">登录中...</string>
+    <string name="dialog_register_doing">正在注册...</string>
+    <string name="dialog_reset_pwd_doing">正在重置密码...</string>
+    <string name="dialog_login_out_doing">正在退出账户...</string>
+    <string name="mobile_phone_register">手机注册</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="other_login_type">第三方登录</string>
+    <string name="input_phone_tip">请输入手机号</string>
+    <string name="input_phone_format_error_tip">输入的手机号码格式不正确</string>
+    <string name="input_phone_empty_error_tip">请先获取短信验证码</string>
+    <string name="input_pwd_format_error_tip">输入的密码格式不正确，请输入6-12位密码，支持字母、数字、下划线</string>
+    <string name="input_password_hint">输入6-12位密码 (字母、数字、下划线)</string>
+    <string name="input_new_password_hint">6-12位新密码 (字母、数字、下划线)</string>
+    <string name="reset_get_verification">重新获取</string>
+    <string name="send_verification_hint">验证码已经发送至 %s</string>
+    <string name="tip_wx_uninstall">非常抱歉，您未安装微信或当前微信版本过低</string>
+
+    <string name="login_username">用户名</string>
+    <string name="stay_pay">待付款</string>
+    <string name="already_finished">已完成</string>
+    <string name="stay_goods">待收货</string>
+    <string name="my_order">我的订单</string>
+    <string name="my_shopping_car">我的购物车</string>
+    <string name="manager_address">地址管理</string>
+    <string name="user_setting">设置</string>
+    <string name="user_setting_mobile">绑定手机</string>
+    <string name="user_setting_pwd">登录密码</string>
+    <string name="my_vip_card">用户中心</string>
+    <string name="manager_bank_card">银行卡管理</string>
+    <string name="manager_recharge_card">充值卡管理</string>
+    <string name="manager_rechargeable_record">购买记录</string>
+    <string name="distribution_centre">创业中心</string>
+    <string name="person_info_et_username_hint">输入您的姓名</string>
+    <string name="person_info_tv_username">姓名：</string>
+    <string name="person_info_tv_phone_number">手机号码：</string>
+    <string name="person_info_et_phone_number_hint">输入您的手机号码</string>
+    <string name="person_info_tv_sex">性别：</string>
+    <string name="person_info_tv_sex_man">男</string>
+    <string name="person_info_tv_sex_woman">女</string>
+    <string name="person_info_tv_birthday">生日：</string>
+    <string name="person_info_et_birthday_hint">请选择出生日期</string>
+    <string name="person_info_tv_city">城市：</string>
+    <string name="person_info_et_city_hint">请选择个人所在城市</string>
+    <string name="person_info_tv_weixin">微信号：</string>
+    <string name="person_info_et_weixin_hint">请输入您的微信号：</string>
+    <string name="add_recharge_tv_select_type">选择充值卡类型</string>
+    <string name="add_recharge_et_card_hint">输入卡号</string>
+    <string name="person_info_tv_my_remainder">我的余额</string>
+    <string name="person_info_tv_available_integral">可用云豆</string>
+    <string name="person_info_tv_my_info">我的资料</string>
+    <string name="person_info_tv_legal_right_explain">权益说明</string>
+    <string name="person_info_tv_integral_cash">云豆提现</string>
+    <string name="person_info_tv_integral_return">云豆返还</string>
+    <string name="person_info_tv_promotion_vip">升级合伙人</string>
+    <string name="person_info_tv_score_pay">云豆付款</string>
+
+    <string name="person_info_tv_username1">姓名</string>
+    <string name="person_info_tv_phone_number1">手机号码</string>
+    <string name="person_info_tv_id">ID</string>
+    <string name="person_info_tv_vip_card">会员卡号</string>
+    <string name="person_info_tv_leven_integral">等级云豆</string>
+    <string name="person_info_tv_leven_name">会员等级</string>
+    <string name="person_info_tv_remainder">余额</string>
+
+    <string name="consume_info_tv_integral_return">云豆返还信息</string>
+    <string name="consume_info_tv_integral_return_content">上一天返云豆信息：{0}\n上一天的返回云豆：{1}\n上一天返还云豆总数：{2}</string>
+    <string name="consume_info_tv_integral_explain">会员权益说明</string>
+    <string name="consume_info_tv_integral_explain_content">会员云豆规则：消费1元积{0}云豆，1云豆抵{1}</string>
+    <string name="promotion_leaguer_tv_type">请选择会员类型</string>
+    <string name="promotion_leaguer_tv_crash">金额：</string>
+    <string name="promotion_leaguer_tv_pay_way">支付方式：</string>
+    <string name="integral_cash_tv_account">选择提现账户</string>
+    <string name="integral_cash_tv_integral">输入提现云豆：</string>
+    <string name="integral_cash_tv_describe">可提现云豆：可提现{0}云豆，1云豆可提现￥{1}\n提现门槛：{2}\n提现手续费比例：{3}%</string>
+
+    <string name="add_account_tv_payee">收款人：</string>
+    <string name="add_account_tv_way">选择提现方式：</string>
+    <string name="add_account_tv_account">账号/卡号：</string>
+    <string name="add_account_tv_confirm_account">确定账号/卡号：</string>
+    <string name="add_account_tv_open_bank">请输入开户支行：</string>
+    <string name="add_account_tv_again_account">确认账号/卡号：</string>
+
+    <string name="add_address_consignee">收货人：</string>
+    <string name="add_address_phone">手机号码：</string>
+    <string name="add_address_city">所在地区：</string>
+    <string name="add_address_street">详细地址：</string>
+    <string name="add_address_street_hint">具体楼道、街牌号码</string>
+    <string name="add_address_setting_default">设为默认地址：</string>
+    <string name="order_list_order_name">订单号：{0}</string>
+
+</resources>

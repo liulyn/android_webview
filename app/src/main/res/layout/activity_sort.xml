@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.cloud.tao.ui.widget.TitleBar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@color/colorPrimary"
+            app:title_left_icon_visible="true"
+            app:title_left_icon_src="@mipmap/ic_back"
+            app:title_right_visible="true"
+            app:title_text="类型"
+            app:title_text_color="@android:color/white" />
+
+        <View
+            style="@style/View.line_width"
+            android:layout_marginLeft="@dimen/content_padding"
+            android:layout_marginRight="@dimen/content_padding"
+            />
+
+        <TextView
+            android:id="@+id/tv_new"
+            style="@style/TextView.Gray_Item"
+            android:drawableLeft="@mipmap/ic_sort_new"
+            android:text="@string/new_game" />
+
+        <TextView
+            android:id="@+id/tv_online"
+            style="@style/TextView.Gray_Item"
+            android:drawableLeft="@mipmap/ic_sort_online"
+            android:text="@string/online_game"
+            />
+
+        <View
+            style="@style/View.line_width"
+            android:layout_marginLeft="@dimen/content_padding"
+            android:layout_marginRight="@dimen/content_padding"
+            />
+
+        <TextView
+            android:id="@+id/tv_game"
+            style="@style/TextView.Gray_Item"
+            android:drawableLeft="@mipmap/dangkr_no_picture_small"
+            android:text="@string/smallgame"
+            />
+    </LinearLayout>
+</layout>
